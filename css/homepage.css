@@ -74,14 +74,16 @@ body{
  .button{
 width: 250px;
 height: 60px;
+border: none;
 background: #3A559C;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 31px;
 margin-left: 84px;
 font-size: 20px;
 color: white;
 font-weight: bolder;
 margin-bottom: 0px;
+transition: ease-in-out 0.3s;
+transition-timing-function: ease-in-out;
 }
 
 .play-now{
@@ -101,40 +103,43 @@ color: #FFFFFF;
 .gray{
     filter: grayscale(60%);
     z-index: 1;
+    transition: ease-in-out 0.3s;
+transition-timing-function: ease-in-out;
+}
+
+.gray:hover{
+    filter: grayscale(0%);
+}
+.real:hover{
+    filter: grayscale(50%);  
 }
 .real{
     position: relative;
     right: 140px;
+    transition: ease-in-out 0.3s;
+transition-timing-function: ease-in-out;
 }
 
 i:hover{
     background: white;
 }
 
-.button:hover{
+ .button:hover{
     background: #f1cf00;
     color:black;
 }
+/* animations */
 
-@keyframes slidein {
+ @keyframes color {
     from {
-      margin-left: 100%;
-      width: 300%; 
+      background:#3A559C;
+      color: white;
     }
   
     to {
-      margin-left: 0%;
-      width: 100%;
+        background:#f1cf00;
+        color:black;
     }
   }
-
-  .real,.gray{
-    animation-duration: 1.5s;
-    animation-name: slidein;
-  }
-
-  @keyframes zoom{
-      from{
-          
-      }
-  }
+  
+  
