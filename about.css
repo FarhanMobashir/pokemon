@@ -5,8 +5,12 @@ body{
 .logo{
     max-width: 100px;
     max-height: 120px;
-}
+    filter: grayscale(60%);
 
+}
+.logo:hover{
+    filter: grayscale(0%);
+}
 .home{
     padding-top: 40px;    
 }
@@ -55,6 +59,7 @@ body{
 .division{
     display: flex;
     justify-content: space-evenly;
+    
 }
 
 .game-info{
@@ -72,8 +77,9 @@ body{
     color: white;
     font-weight: bolder;
     margin-bottom: 0px;
-    transition: ease-in-out 0.3s;
+    transition: ease-in-out 0.2s;
     transition-timing-function: ease-in-out;
+    cursor: pointer;
     }
 
     .game-logo{
@@ -117,6 +123,7 @@ body{
     text-align: center;
     font-size: 25px;
     padding-bottom: 30px;
+    font-weight: 400;
 }
 
 .social{
@@ -131,6 +138,7 @@ i{
 
 i:hover{
     color: white;
+    
 }
 
 .button:hover{

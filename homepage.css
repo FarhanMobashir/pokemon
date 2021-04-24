@@ -67,8 +67,8 @@ body{
 .punch-line{
     font-size: 22px;
     padding-top: 16px;
-    padding-right: 30px;
-    font-weight: lighter;
+    padding-right: 40px;
+    font-weight: light;
 }
  .button{
 width: 250px;
@@ -83,6 +83,7 @@ font-weight: bolder;
 margin-bottom: 0px;
 transition: ease-in-out 0.3s;
 transition-timing-function: ease-in-out;
+cursor: pointer;
 }
 
 
@@ -109,7 +110,7 @@ transition-timing-function: ease-in-out;
 .real{
     position: relative;
     right: 140px;
-    transition: ease-in-out 0.3s;
+    transition: ease-in-out 0.2s;
 transition-timing-function: ease-in-out;
 }
 
